@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html><head>
+<title>antikythera1-4</title>
+<!--<base href="http://www.ams.org/new-in-math/cover/">-->
+
+</head>
+<META NAME=KEYWORDS CONTENT=" ">
+<!--What's New in Mathematics This Month Feature Column-->
+<body bgcolor="#FFFFFF">
+<a href="/"><img border=0 hspace=5 src="../images/e-math-globe.gif"align=left alt="e-MATH"></a><br>
+
+<font size="+2"><b>The Antikythera Mechanism I</b></font><p>
+<b>With Java animations by Bill Casselman</b>
+
+<br clear=all>
+<!--&nbsp;<br>&nbsp;<br>-->
+<hr noshade>
+<h2>4. Gear ratios and continued fractions</h2>
+
+It is interesting to speculate how the first century B.C. designers
+of the Antikythera Mechanism were able to discover the
+excellent rational approximation 254/19 = 13.36842105 
+to the astronomical
+ratio 13.368267.. . The error is 0.00015, 
+which corresponds to one
+part in 86,000. <p>
+
+The most economical explanation is that in keeping records,
+early astronomers were struck by the almost exact duplication
+of the pattern of equinoxes and solstices (sun) and phases
+of the moon in a 19-year cycle. Nineteen years almost exactly
+matches 235 lunar-phase cycles ("synodic months"), which
+correspond to 235+19=254 revolutions of the moon with respect
+to the stars. It picks up an extra one each year from its
+trip with us around the sun.<p>
+
+But part of the answer comes from the astronomical ratio itself,
+which turns out to be one of those numbers that can be very well
+approximated by rationals. This is manifest in its continued fraction
+expansion:
+
+<pre>
+13.368267..  = [13, 2, 1, 2, 1, 1, 17, ...] 
+
+                   1
+           = 13 + ------------------------
+                      1 
+                  2+ ---------------------
+                         1
+                     1+ ------------------
+                            1
+                        2+ ---------------
+                               1
+                           1+ ------------
+                                   1
+                               1+ --------
+                                       1
+                                  17+ ----
+                                       etc
+
+</pre>
+
+Stopping the process after the last "1+" gives the "continuant"
+254/19 used in the Antikythera Mechanism. Continuing with
+the the 17 gives the next continuant, 4465/334. The
+large increase in the denominator comes from the 17. 
+<p>
+Here is a useful <a href="kyth4.html">fact</a> from the theory of 
+continued fractions: 
+<ul>
+<li> Suppose
+<tt>p<sub>n</sub>/q<sub>n</sub></tt> and 
+<tt>p<sub>n+1</sub>/q<sub>n+1</sub></tt>
+are consecutive continuants, and that <tt>L</tt> is the number
+represented by the continued fraction. Then
+<pre>           1            p<sub>n</sub>        1
+       -------- < |L - --- | < ------- .
+       2 q<sub>n</sub>q<sub>n+1</sub>         q<sub>n</sub>      q<sub>n</sub>q<sub>n+1</sub>           
+</pre>
+</ul>
+
+This means on the one hand that the error in any
+continuant is less than one over the product of its denominator with
+the denominator of the <i>next</i> continuant. So the approximation
+254/19 is guaranteed to have an error less than 
+ 1/(19x334) = .0001576  just from the continued fraction
+expansion of the astronomical ratio. On a different planet things
+would have gone otherwise. If that 17 had been a 1, 
+then 254/19
+would still be a continuant, but the denominator of the next
+continuant would only be 30. The other side of the same
+analysis then guarantees an error of <i>at least</i> .00088.
+
+<p>
+<hr>
+<ul> 
+<li><a href="kyth1.html">1. The history of the Mechanism</a><p>
+<li><a href="kyth6.html">2. Pictures of a Mechanism</a><p>
+<li><a href="kyth2.html">3. The Sun-Moon Assembly</a><p>
+<font color="red"><li></font><a href="kyth3.html">4. Gear ratios and continued fractions</a><p>
+<li><a href="kyth4.html">References</a>
+</ul>
+
+
+
+<hr noshade>
+
+<font size=2>
+<em>Comments: <a href="mailto:webmaster@ams.org">webmaster@ams.org</a>
+<br>&#169 copyright 2000, American Mathematical Society.</em>
+</font></p>
+<map name="New in Math Toolbar">
+
+  <area shape="rect" coords="422,16,454,100" href="/sitemap" alt="e-MATH SITEMAP">
+
+  <area shape="rect" coords="381,22,413,103" href="/sitesearch" alt="e-MATH SEARCH">
+
+  <area shape="rect" coords="339,14,374,100" href="/customers" alt="ONLINE ORDERING AND CUSTOMER SERVICES">
+
+  <area shape="rect" coords="296,7,335,104" href="/new-in-math" alt="WHAT'S NEW IN MATHEMATICS">
+
+  <area shape="rect" coords="254,6,286,100" href="/meetings" alt="MEETINGS AND CONFERENCES">
+
+  <area shape="rect" coords="212,5,246,100" href="/authors" alt="AUTHORS AND REVIEWERS">
+
+  <area shape="rect" coords="172,2,208,99" href="/employment" alt="EMPLOYMENT AND CAREERS">
+
+  <area shape="rect" coords="121,0,165,99" href="/publications" alt="PUBLICATIONS AND RESEARCH TOOLS">
+
+  <area shape="rect" coords="81,1,118,103" href="/government" alt="GOVERNMENT AFFAIRS AND EDUCATION">
+
+  <area shape="rect" coords="39,12,75,104" href="/membership" alt="AMS MEMBERSHIP">
+
+  <area shape="rect" coords="0,14,33,102" href="/" alt="e-MATH HOME">
+
+  
+
+</map>
+<!---END NEW IN MATH TOOLBAR 1999--->
+
+
+</BODY>
+</HTML>
